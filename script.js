@@ -44,6 +44,7 @@ function addPost(e){
 
     .then(res => res.json())
     .then(data => console.log(data))
+    read()
 }
 
 document.getElementById('updateMessage').addEventListener('click',update);
@@ -66,6 +67,7 @@ function update(e){
     })
     .then(res => res.json())
     .then(data => console.log(data))
+    read()
 }
 document.getElementById('deleteMessage').addEventListener('click',deletePost);
 function deletePost(e){
@@ -80,5 +82,6 @@ function deletePost(e){
     })
     .then(res => res.json())
     .then(data => console.log(data))
+    read()
 
 }
